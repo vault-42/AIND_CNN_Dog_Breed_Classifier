@@ -1,0 +1,7 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if filename %}
+  <h1>This dog <br/><img src="{{ url_for('send_file', filename=filename) }}"><br/> looks to be a {{ dog_name }}</h1>
+{% else %}
+  <h1>no image for whatever reason</h1>
+{% endif %}
